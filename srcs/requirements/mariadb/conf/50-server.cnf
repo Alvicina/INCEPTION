@@ -1,0 +1,14 @@
+[mysqld]
+datadir = /var/lib/mysql
+socket = /run/mysqld/mysqld.sock
+bind_address=*
+port = 3306
+user = mysql
+
+#1) solo aplica al daemon de mariadb
+#2) donde se van a guardar todos los archivos de mariadb
+#3) this defines the location of the Unix socket file. The socket file is used for local connections to the MySQL server.
+#4) This tells MySQL to listen for connections on all available IP addresses. Setting it to * means MySQL will accept connections from any network interface
+#5) This specifies the port on which MySQL will listen for incoming connections. The default MySQL port is 3306
+#6) this indicates the user under which the MySQL server process will run. It is a security measure to run MySQL as a non-root user
+
